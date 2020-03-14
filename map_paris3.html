@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_0fe8dc999ba24dd3a99df3888466fd11 {
+                position : relative;
+                width : 1000.0px;
+                height: 500.0px;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0fe8dc999ba24dd3a99df3888466fd11" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_0fe8dc999ba24dd3a99df3888466fd11 = L.map(
+                                  'map_0fe8dc999ba24dd3a99df3888466fd11',
+                                  {center: [48.8566969,2.3514616],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            L.control.scale().addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+        
+    
+            var tile_layer_a1da8e6bb9e6477d9dd0081d8378142d = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+        
+    
+            var circle_marker_932db1a41ced41b89ab4bd969dfed192 = L.circleMarker(
+                [48.84008538,2.2928258219999997],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_c5f9299632024eacaab2d8c2ab09f83b = L.popup({maxWidth: '300'});
+
+            
+                var html_bcb1158b6a2e4c37a7b10f4b7c81eac2 = $('<div id="html_bcb1158b6a2e4c37a7b10f4b7c81eac2" style="width: 100.0%; height: 100.0%;">Vaugirard, 15eme Ardt</div>')[0];
+                popup_c5f9299632024eacaab2d8c2ab09f83b.setContent(html_bcb1158b6a2e4c37a7b10f4b7c81eac2);
+            
+
+            circle_marker_932db1a41ced41b89ab4bd969dfed192.bindPopup(popup_c5f9299632024eacaab2d8c2ab09f83b);
+
+            
+        
+    
+            var circle_marker_869faa8d542646a5941716ca8205502b = L.circleMarker(
+                [48.87613004,2.360728488],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_54cd193809a44faa9062b065ecd9989c = L.popup({maxWidth: '300'});
+
+            
+                var html_362cfa07d16943ff8928a86381704518 = $('<div id="html_362cfa07d16943ff8928a86381704518" style="width: 100.0%; height: 100.0%;">Entrepot, 10eme Ardt</div>')[0];
+                popup_54cd193809a44faa9062b065ecd9989c.setContent(html_362cfa07d16943ff8928a86381704518);
+            
+
+            circle_marker_869faa8d542646a5941716ca8205502b.bindPopup(popup_54cd193809a44faa9062b065ecd9989c);
+
+            
+        
+    
+            var circle_marker_4d628cef7b194dcea0b93fad6a18e749 = L.circleMarker(
+                [48.86039211,2.261970788],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_6e177bc5ac6447cc81dec16f3e03f486 = L.popup({maxWidth: '300'});
+
+            
+                var html_6d83104fc60d4412b6ce5c0b0daec660 = $('<div id="html_6d83104fc60d4412b6ce5c0b0daec660" style="width: 100.0%; height: 100.0%;">Passy, 16eme Ardt</div>')[0];
+                popup_6e177bc5ac6447cc81dec16f3e03f486.setContent(html_6d83104fc60d4412b6ce5c0b0daec660);
+            
+
+            circle_marker_4d628cef7b194dcea0b93fad6a18e749.bindPopup(popup_6e177bc5ac6447cc81dec16f3e03f486);
+
+            
+        
+    
+            var circle_marker_bd8616f7444b472a8a7f528bd64c913b = L.circleMarker(
+                [48.86827922,2.342802547],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_6de8145389dd4b45880dc073eb7e6536 = L.popup({maxWidth: '300'});
+
+            
+                var html_00929eb7eeb44130a8513abc7e7ed4b5 = $('<div id="html_00929eb7eeb44130a8513abc7e7ed4b5" style="width: 100.0%; height: 100.0%;">Bourse, 2eme Ardt</div>')[0];
+                popup_6de8145389dd4b45880dc073eb7e6536.setContent(html_00929eb7eeb44130a8513abc7e7ed4b5);
+            
+
+            circle_marker_bd8616f7444b472a8a7f528bd64c913b.bindPopup(popup_6de8145389dd4b45880dc073eb7e6536);
+
+            
+        
+    
+            var circle_marker_649049a5faa147ca9b50187e22a100a0 = L.circleMarker(
+                [48.88732652,2.306776991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_2ba09ac2cb0f4ea79bd2ac16037bc179 = L.popup({maxWidth: '300'});
+
+            
+                var html_2aa571d1867a4c2b817510d490b1213a = $('<div id="html_2aa571d1867a4c2b817510d490b1213a" style="width: 100.0%; height: 100.0%;">Batignolles-Monceau, 17eme Ardt</div>')[0];
+                popup_2ba09ac2cb0f4ea79bd2ac16037bc179.setContent(html_2aa571d1867a4c2b817510d490b1213a);
+            
+
+            circle_marker_649049a5faa147ca9b50187e22a100a0.bindPopup(popup_2ba09ac2cb0f4ea79bd2ac16037bc179);
+
+            
+        
+    
+            var circle_marker_aee8d07570fa48eab9babe46ca5b78b7 = L.circleMarker(
+                [48.862562700000005,2.336443362],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_869bd00f488845679e89636222ce7e06 = L.popup({maxWidth: '300'});
+
+            
+                var html_63aabd7e68d6497a997be9bc60b17b76 = $('<div id="html_63aabd7e68d6497a997be9bc60b17b76" style="width: 100.0%; height: 100.0%;">Louvre, 1er Ardt</div>')[0];
+                popup_869bd00f488845679e89636222ce7e06.setContent(html_63aabd7e68d6497a997be9bc60b17b76);
+            
+
+            circle_marker_aee8d07570fa48eab9babe46ca5b78b7.bindPopup(popup_869bd00f488845679e89636222ce7e06);
+
+            
+        
+    
+            var circle_marker_50cb81dc5149479abb2e48f059303b52 = L.circleMarker(
+                [48.85434143,2.35762962],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_473cb4cafe204e9ab061a33b3e74c7e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_8aaf2c53b6044a229cd07ae359d7d814 = $('<div id="html_8aaf2c53b6044a229cd07ae359d7d814" style="width: 100.0%; height: 100.0%;">Hotel-de-Ville, 4eme Ardt</div>')[0];
+                popup_473cb4cafe204e9ab061a33b3e74c7e1.setContent(html_8aaf2c53b6044a229cd07ae359d7d814);
+            
+
+            circle_marker_50cb81dc5149479abb2e48f059303b52.bindPopup(popup_473cb4cafe204e9ab061a33b3e74c7e1);
+
+            
+        
+    
+            var circle_marker_47855164c13e4ac0ae99a2aa36efc853 = L.circleMarker(
+                [48.87272084,2.312554022],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_2a2ccaf4410445d38266cf0fdeb31090 = L.popup({maxWidth: '300'});
+
+            
+                var html_d1d4c8bcbdb6433ba00094a9b79c64f3 = $('<div id="html_d1d4c8bcbdb6433ba00094a9b79c64f3" style="width: 100.0%; height: 100.0%;">Elysee, 8eme Ardt</div>')[0];
+                popup_2a2ccaf4410445d38266cf0fdeb31090.setContent(html_d1d4c8bcbdb6433ba00094a9b79c64f3);
+            
+
+            circle_marker_47855164c13e4ac0ae99a2aa36efc853.bindPopup(popup_2a2ccaf4410445d38266cf0fdeb31090);
+
+            
+        
+    
+            var circle_marker_cabb4ab6da604ef49666326e8ce54e96 = L.circleMarker(
+                [48.89256927,2.34816052],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_ada064846bc747bcb5ee4f7390762502 = L.popup({maxWidth: '300'});
+
+            
+                var html_5789d652a53f40408d7e660eded6ba40 = $('<div id="html_5789d652a53f40408d7e660eded6ba40" style="width: 100.0%; height: 100.0%;">Buttes-Montmartre, 18eme Ardt</div>')[0];
+                popup_ada064846bc747bcb5ee4f7390762502.setContent(html_5789d652a53f40408d7e660eded6ba40);
+            
+
+            circle_marker_cabb4ab6da604ef49666326e8ce54e96.bindPopup(popup_ada064846bc747bcb5ee4f7390762502);
+
+            
+        
+    
+            var circle_marker_76c0cf360f934310a042d38face5b6e2 = L.circleMarker(
+                [48.85905922,2.380058308],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_a8520b86a86741b8aad86dbdb19942ca = L.popup({maxWidth: '300'});
+
+            
+                var html_4a318f7d973e4fa08c7b4a78c3056f3f = $('<div id="html_4a318f7d973e4fa08c7b4a78c3056f3f" style="width: 100.0%; height: 100.0%;">Popincourt, 11eme Ardt</div>')[0];
+                popup_a8520b86a86741b8aad86dbdb19942ca.setContent(html_4a318f7d973e4fa08c7b4a78c3056f3f);
+            
+
+            circle_marker_76c0cf360f934310a042d38face5b6e2.bindPopup(popup_a8520b86a86741b8aad86dbdb19942ca);
+
+            
+        
+    
+            var circle_marker_3d5a84527ad14928baf74a3aaf0de21a = L.circleMarker(
+                [48.82838803,2.36227244],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_e9ac33c2f51242cebd3894884b9fd7d8 = L.popup({maxWidth: '300'});
+
+            
+                var html_99cebb1038614ad6932d443e0ef4ad54 = $('<div id="html_99cebb1038614ad6932d443e0ef4ad54" style="width: 100.0%; height: 100.0%;">Gobelins, 13eme Ardt</div>')[0];
+                popup_e9ac33c2f51242cebd3894884b9fd7d8.setContent(html_99cebb1038614ad6932d443e0ef4ad54);
+            
+
+            circle_marker_3d5a84527ad14928baf74a3aaf0de21a.bindPopup(popup_e9ac33c2f51242cebd3894884b9fd7d8);
+
+            
+        
+    
+            var circle_marker_98ed6fdaa6c643ff825d913807f9908b = L.circleMarker(
+                [48.86287238,2.3600009859999997],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_51da11c4e9fb434a960fbabfc15c7368 = L.popup({maxWidth: '300'});
+
+            
+                var html_8b88c65ccef84ec596103e3dc596cb0b = $('<div id="html_8b88c65ccef84ec596103e3dc596cb0b" style="width: 100.0%; height: 100.0%;">Temple, 3eme Ardt</div>')[0];
+                popup_51da11c4e9fb434a960fbabfc15c7368.setContent(html_8b88c65ccef84ec596103e3dc596cb0b);
+            
+
+            circle_marker_98ed6fdaa6c643ff825d913807f9908b.bindPopup(popup_51da11c4e9fb434a960fbabfc15c7368);
+
+            
+        
+    
+            var circle_marker_07ad0222e2a448d2a91cb992b657b025 = L.circleMarker(
+                [48.8292445,2.326542044],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_daa82b80757649f39df69813428d5822 = L.popup({maxWidth: '300'});
+
+            
+                var html_f1e5cccfdf294f9282d1d6ddc62e4ab2 = $('<div id="html_f1e5cccfdf294f9282d1d6ddc62e4ab2" style="width: 100.0%; height: 100.0%;">Observatoire, 14eme Ardt</div>')[0];
+                popup_daa82b80757649f39df69813428d5822.setContent(html_f1e5cccfdf294f9282d1d6ddc62e4ab2);
+            
+
+            circle_marker_07ad0222e2a448d2a91cb992b657b025.bindPopup(popup_daa82b80757649f39df69813428d5822);
+
+            
+        
+    
+            var circle_marker_008f24d2590d474e8a914a2b55a70f9b = L.circleMarker(
+                [48.86346058,2.401188129],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_11f0118d3331400b88cd0f95f417f8c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_259df67bee0e49fbab577031cfad8f09 = $('<div id="html_259df67bee0e49fbab577031cfad8f09" style="width: 100.0%; height: 100.0%;">Menilmontant, 20eme Ardt</div>')[0];
+                popup_11f0118d3331400b88cd0f95f417f8c4.setContent(html_259df67bee0e49fbab577031cfad8f09);
+            
+
+            circle_marker_008f24d2590d474e8a914a2b55a70f9b.bindPopup(popup_11f0118d3331400b88cd0f95f417f8c4);
+
+            
+        
+    
+            var circle_marker_df6130ca261d47f285a8cd3327e90f22 = L.circleMarker(
+                [48.84444315,2.35071461],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_cf610278b8df4c23962520213470f6db = L.popup({maxWidth: '300'});
+
+            
+                var html_9e667984ca58463cb4878ef551849e50 = $('<div id="html_9e667984ca58463cb4878ef551849e50" style="width: 100.0%; height: 100.0%;">Pantheon, 5eme Ardt</div>')[0];
+                popup_cf610278b8df4c23962520213470f6db.setContent(html_9e667984ca58463cb4878ef551849e50);
+            
+
+            circle_marker_df6130ca261d47f285a8cd3327e90f22.bindPopup(popup_cf610278b8df4c23962520213470f6db);
+
+            
+        
+    
+            var circle_marker_32a8c1ea795744ca83693e39248bf345 = L.circleMarker(
+                [48.84913036,2.332897999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_52099e5ac55b4fcbbd308df9f9517374 = L.popup({maxWidth: '300'});
+
+            
+                var html_8a8017d812e2436b8637f26cbe1e871c = $('<div id="html_8a8017d812e2436b8637f26cbe1e871c" style="width: 100.0%; height: 100.0%;">Luxembourg, 6eme Ardt</div>')[0];
+                popup_52099e5ac55b4fcbbd308df9f9517374.setContent(html_8a8017d812e2436b8637f26cbe1e871c);
+            
+
+            circle_marker_32a8c1ea795744ca83693e39248bf345.bindPopup(popup_52099e5ac55b4fcbbd308df9f9517374);
+
+            
+        
+    
+            var circle_marker_00882405596d4b7d9f9002fb9c006dba = L.circleMarker(
+                [48.83497438,2.4213249009999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_fbeddc0948954817973fbf4e54289baa = L.popup({maxWidth: '300'});
+
+            
+                var html_de55aefff1524f0eb9e69c3cd063f5ba = $('<div id="html_de55aefff1524f0eb9e69c3cd063f5ba" style="width: 100.0%; height: 100.0%;">Reuilly, 12eme Ardt</div>')[0];
+                popup_fbeddc0948954817973fbf4e54289baa.setContent(html_de55aefff1524f0eb9e69c3cd063f5ba);
+            
+
+            circle_marker_00882405596d4b7d9f9002fb9c006dba.bindPopup(popup_fbeddc0948954817973fbf4e54289baa);
+
+            
+        
+    
+            var circle_marker_85a982f80f9a4006b5896ae8071d25c0 = L.circleMarker(
+                [48.85617443,2.312187691],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_3b4dac8369e042229ae19f348ce515c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_0092c995ef3844189952b6604fb65218 = $('<div id="html_0092c995ef3844189952b6604fb65218" style="width: 100.0%; height: 100.0%;">Palais-Bourbon, 7eme Ardt</div>')[0];
+                popup_3b4dac8369e042229ae19f348ce515c4.setContent(html_0092c995ef3844189952b6604fb65218);
+            
+
+            circle_marker_85a982f80f9a4006b5896ae8071d25c0.bindPopup(popup_3b4dac8369e042229ae19f348ce515c4);
+
+            
+        
+    
+            var circle_marker_722139f8d5034599a80c61e83b4bd5c4 = L.circleMarker(
+                [48.87716352,2.337457543],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_362f197c977540e8b7fbe1b7105a0c04 = L.popup({maxWidth: '300'});
+
+            
+                var html_422022da9cfc43778e9fcaee511ba734 = $('<div id="html_422022da9cfc43778e9fcaee511ba734" style="width: 100.0%; height: 100.0%;">Opera, 9eme Ardt</div>')[0];
+                popup_362f197c977540e8b7fbe1b7105a0c04.setContent(html_422022da9cfc43778e9fcaee511ba734);
+            
+
+            circle_marker_722139f8d5034599a80c61e83b4bd5c4.bindPopup(popup_362f197c977540e8b7fbe1b7105a0c04);
+
+            
+        
+    
+            var circle_marker_ae99a63488c6474595bd890c04bc3130 = L.circleMarker(
+                [48.887076,2.38482096],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_2b206d1a5be9472eae687123693e9c7c = L.popup({maxWidth: '300'});
+
+            
+                var html_dddc46fd9fd2456a8ea90ab2f096985d = $('<div id="html_dddc46fd9fd2456a8ea90ab2f096985d" style="width: 100.0%; height: 100.0%;">Buttes-Chaumont, 19eme Ardt</div>')[0];
+                popup_2b206d1a5be9472eae687123693e9c7c.setContent(html_dddc46fd9fd2456a8ea90ab2f096985d);
+            
+
+            circle_marker_ae99a63488c6474595bd890c04bc3130.bindPopup(popup_2b206d1a5be9472eae687123693e9c7c);
+
+            
+        
+    
+
+            var marker_dbd3727c1c274dbf9232eb426bddc057 = L.marker(
+                [48.85293705,2.3500501225000026],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_409fef51b82a4c3cb111bd36be646abc = L.popup({maxWidth: '300'});
+
+            
+                var html_75f52d48a217490984a9b63416ad24c0 = $('<div id="html_75f52d48a217490984a9b63416ad24c0" style="width: 100.0%; height: 100.0%;">Cathedrale Notre Dame</div>')[0];
+                popup_409fef51b82a4c3cb111bd36be646abc.setContent(html_75f52d48a217490984a9b63416ad24c0);
+            
+
+            marker_dbd3727c1c274dbf9232eb426bddc057.bindPopup(popup_409fef51b82a4c3cb111bd36be646abc);
+
+            
+        
+    
+
+            var marker_3afa40b761da4687a005999dda4043c0 = L.marker(
+                [48.88680575,2.3430153448835087],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_95c6383304cc4b2d946ad9c9ed58b927 = L.popup({maxWidth: '300'});
+
+            
+                var html_158705d7e4094df8a1a7c45aa340a030 = $('<div id="html_158705d7e4094df8a1a7c45aa340a030" style="width: 100.0%; height: 100.0%;">Basilique du Sacre-Coeur de Montmartre </div>')[0];
+                popup_95c6383304cc4b2d946ad9c9ed58b927.setContent(html_158705d7e4094df8a1a7c45aa340a030);
+            
+
+            marker_3afa40b761da4687a005999dda4043c0.bindPopup(popup_95c6383304cc4b2d946ad9c9ed58b927);
+
+            
+        
+    
+
+            var marker_ee55c23f7a754544bfab6798fc84e52f = L.marker(
+                [48.8612442,2.3398124],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_5e4289163a3843f981110df5d2d04cee = L.popup({maxWidth: '300'});
+
+            
+                var html_94983e19e0d849448edbf3835546ece3 = $('<div id="html_94983e19e0d849448edbf3835546ece3" style="width: 100.0%; height: 100.0%;"> Musee du Louvre </div>')[0];
+                popup_5e4289163a3843f981110df5d2d04cee.setContent(html_94983e19e0d849448edbf3835546ece3);
+            
+
+            marker_ee55c23f7a754544bfab6798fc84e52f.bindPopup(popup_5e4289163a3843f981110df5d2d04cee);
+
+            
+        
+    
+
+            var marker_12f570f5d0bb499e85fbef0db3078cf9 = L.marker(
+                [48.858260200000004,2.2944990543196795],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_169cde3f304e45c8831b323afe1ddbba = L.popup({maxWidth: '300'});
+
+            
+                var html_6f0d86420d9d48fdbeb5dbdb94ddb012 = $('<div id="html_6f0d86420d9d48fdbeb5dbdb94ddb012" style="width: 100.0%; height: 100.0%;">Tour Eiffel</div>')[0];
+                popup_169cde3f304e45c8831b323afe1ddbba.setContent(html_6f0d86420d9d48fdbeb5dbdb94ddb012);
+            
+
+            marker_12f570f5d0bb499e85fbef0db3078cf9.bindPopup(popup_169cde3f304e45c8831b323afe1ddbba);
+
+            
+        
+    
+
+            var marker_1769b533fd0e44ec8b197acadd265736 = L.marker(
+                [48.860776650000005,2.3517423430821607],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_c298cb6c60d64f79a76810d747b5b358 = L.popup({maxWidth: '300'});
+
+            
+                var html_c09524db2d844efb84d4a627016650e5 = $('<div id="html_c09524db2d844efb84d4a627016650e5" style="width: 100.0%; height: 100.0%;">Centre Georges-Pompidou</div>')[0];
+                popup_c298cb6c60d64f79a76810d747b5b358.setContent(html_c09524db2d844efb84d4a627016650e5);
+            
+
+            marker_1769b533fd0e44ec8b197acadd265736.bindPopup(popup_c298cb6c60d64f79a76810d747b5b358);
+
+            
+        
+    
+
+            var marker_979d8fe4bdf14cf0954d3b1969c4c64c = L.marker(
+                [48.8509524,2.3237607],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_da3a093e75564f79aa19e272e381b0e6 = L.popup({maxWidth: '300'});
+
+            
+                var html_4b2bb6b5ea4346d8b63668c54d527d79 = $('<div id="html_4b2bb6b5ea4346d8b63668c54d527d79" style="width: 100.0%; height: 100.0%;">Chapelle Notre-Dame-de-la-Medaille-miraculeuse</div>')[0];
+                popup_da3a093e75564f79aa19e272e381b0e6.setContent(html_4b2bb6b5ea4346d8b63668c54d527d79);
+            
+
+            marker_979d8fe4bdf14cf0954d3b1969c4c64c.bindPopup(popup_da3a093e75564f79aa19e272e381b0e6);
+
+            
+        
+    
+
+            var marker_3aa5262cb9274dd1be541f6bb305f50b = L.marker(
+                [48.844287949999995,2.3561546510315092],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_9353252787db40febf1749139ff140a3 = L.popup({maxWidth: '300'});
+
+            
+                var html_29b8bdebc63049c086cea7558edac5a7 = $('<div id="html_29b8bdebc63049c086cea7558edac5a7" style="width: 100.0%; height: 100.0%;">Jardin des plantes de Paris</div>')[0];
+                popup_9353252787db40febf1749139ff140a3.setContent(html_29b8bdebc63049c086cea7558edac5a7);
+            
+
+            marker_3aa5262cb9274dd1be541f6bb305f50b.bindPopup(popup_9353252787db40febf1749139ff140a3);
+
+            
+        
+    
+
+            var marker_20554932f68445cfbbac4df448c7bd89 = L.marker(
+                [48.8739804,2.2959103],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_f1a499d616e345ae9e2f267ed292dbe0 = L.popup({maxWidth: '300'});
+
+            
+                var html_e9517b269ccc4bc4bde47e54794e9d65 = $('<div id="html_e9517b269ccc4bc4bde47e54794e9d65" style="width: 100.0%; height: 100.0%;">Arc de triomphe</div>')[0];
+                popup_f1a499d616e345ae9e2f267ed292dbe0.setContent(html_e9517b269ccc4bc4bde47e54794e9d65);
+            
+
+            marker_20554932f68445cfbbac4df448c7bd89.bindPopup(popup_f1a499d616e345ae9e2f267ed292dbe0);
+
+            
+        
+    
+
+            var marker_4f1702c7ad2942dda4670b7964274b1f = L.marker(
+                [48.8672677,2.3118891],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_f0481c69ba524d9b983b63ab34e50829 = L.popup({maxWidth: '300'});
+
+            
+                var html_10fbb0ff29e74e2cbeec61dd277ff995 = $('<div id="html_10fbb0ff29e74e2cbeec61dd277ff995" style="width: 100.0%; height: 100.0%;">Galeries Nationales du Grand Palais</div>')[0];
+                popup_f0481c69ba524d9b983b63ab34e50829.setContent(html_10fbb0ff29e74e2cbeec61dd277ff995);
+            
+
+            marker_4f1702c7ad2942dda4670b7964274b1f.bindPopup(popup_f0481c69ba524d9b983b63ab34e50829);
+
+            
+        
+    
+
+            var marker_8f402b700c404916a2ef2aaccc422716 = L.marker(
+                [48.8570374,2.3118779],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_c7da55c9cc524a8b9967695d839a82b1 = L.popup({maxWidth: '300'});
+
+            
+                var html_e4643b98d01d4b9d8ae489f23e950ba1 = $('<div id="html_e4643b98d01d4b9d8ae489f23e950ba1" style="width: 100.0%; height: 100.0%;">Hotel des Invalides</div>')[0];
+                popup_c7da55c9cc524a8b9967695d839a82b1.setContent(html_e4643b98d01d4b9d8ae489f23e950ba1);
+            
+
+            marker_8f402b700c404916a2ef2aaccc422716.bindPopup(popup_c7da55c9cc524a8b9967695d839a82b1);
+
+            
+        
+    
+
+            var marker_f06bf330db50498288c67e6ddf552b14 = L.marker(
+                [48.842109750000006,2.321972123611115],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_0fe8dc999ba24dd3a99df3888466fd11);
+            
+    
+            var popup_9abe8a9c26b4493fb5b4aea10ff4700c = L.popup({maxWidth: '300'});
+
+            
+                var html_02bd3bec36d3451ab3d219e9d238343a = $('<div id="html_02bd3bec36d3451ab3d219e9d238343a" style="width: 100.0%; height: 100.0%;">Tour Montparnasse</div>')[0];
+                popup_9abe8a9c26b4493fb5b4aea10ff4700c.setContent(html_02bd3bec36d3451ab3d219e9d238343a);
+            
+
+            marker_f06bf330db50498288c67e6ddf552b14.bindPopup(popup_9abe8a9c26b4493fb5b4aea10ff4700c);
+
+            
+        
+</script>
